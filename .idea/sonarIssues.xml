@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
@@ -173,6 +178,66 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/build/tmp/kapt3/stubs/debug/com/abhi41/foodrecipe/model/Result.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/build/tmp/kapt3/stubs/debug/com/abhi41/jetfoodrecipeapp/data/local/database/RecipesDatabase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/build/tmp/kapt3/stubs/debug/com/abhi41/jetfoodrecipeapp/data/local/entity/ResultEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/dto/ExtendedIngredient.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/dto/ExtendedIngredientDto.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/dto/FoodJoke.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/dto/FoodJokeDto.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/dto/FoodRecipe.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/dto/FoodRecipeDto.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/dto/Result.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/dto/ResultDto.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/local/Converters.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/local/LocalDataSource.kt">
           <value>
             <set />
@@ -183,12 +248,157 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/local/database/RecipesDatabase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/local/entity/FoodJokeEntity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/local/entity/Result.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/local/entity/ResultEntity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/local/util/GsonParser.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/local/util/JsonParser.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/network/RemoteDataSource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/remote/FoodRecipesApi.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/remote/RecipesRepositoryImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/repository/RecipesRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/usecase/FoodjokeUsecase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/data/usecase/RecipesUsecase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/di/DatabaseModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/di/NetworkModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/di/RecipesModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/domain/RecipesRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/model/ExtendedIngredient.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/model/FoodJoke.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/model/Result.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/navigation/BottomNavGraph.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/common/HandleResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/common/RecipesListContent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/dashboardScreen/DashBoardScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/dashboardScreen/DashBoardViewModel.kt">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/detailScreen/DetailScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/detailScreen/DetailScreenAppbar.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/detailScreen/DetailViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/favoriteScreen/FavoriteScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/foodJoke/FoodJokeScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/foodJoke/FoodJokeState.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/foodJoke/FoodJokeViewModel.kt">
           <value>
             <set />
           </value>
@@ -209,6 +419,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/utils/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/utils/Resource.kt">
           <value>
             <set />
           </value>

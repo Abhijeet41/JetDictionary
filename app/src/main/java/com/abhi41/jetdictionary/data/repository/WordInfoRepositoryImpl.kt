@@ -45,6 +45,7 @@ class WordInfoRepositoryImpl(
         }
 
         //emit data to the ui ()
+        //now send data from database to use-case or view-model
         val newWordInfos = dao.getWordInfos(word).map { it.toWordInfo() }
         emit(Resource.Success(newWordInfos))
 
