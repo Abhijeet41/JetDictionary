@@ -6,17 +6,9 @@ pipeline {
         PATH = "${JAVA_HOME}/bin:${env.PATH}"
     }*/
     tools {
-      git 'Git'
       jdk "OracleJDK11"
     }
     stages {
-        stage('Checkout') {
-            steps {
-                // Clone the project from the main branch
-                git branch: 'master', url: 'https://github.com/Abhijeet41/JetDictionary.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 // Compile the Kotlin project (assuming it's using Gradle)
