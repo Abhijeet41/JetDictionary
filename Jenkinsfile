@@ -9,6 +9,12 @@ pipeline {
       jdk "OracleJDK11"
     }
     stages {
+       stage('Set Permissions') {
+           steps {
+              // Grant execute permission to the Gradle wrapper
+               sh 'chmod +x ./gradlew'
+            }
+         }
         stage('Build') {
             steps {
                 // Compile the Kotlin project (assuming it's using Gradle)
