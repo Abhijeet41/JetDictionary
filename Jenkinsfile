@@ -1,34 +1,27 @@
 pipeline {
     agent any
 
-    /*environment {
-        JAVA_HOME = tool name: 'JDK11'  // Ensure JDK 11 is installed in Jenkins tools
-        PATH = "${JAVA_HOME}/bin:${env.PATH}"
-    }*/
     tools {
-      jdk "OracleJDK11"
+        jdk 'OracleJDK11'  // Use your predefined JDK tool
     }
+
+    environment {
+        ANDROID_HOME = '/home/vagrant/Android/Sdk'   // Ensure this is the correct path to the SDK
+        PATH = "${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${env.PATH}"  // Add SDK tools to PATH
+    }
+
     stages {
-       stage('Set Permissions') {
-           steps {
-              // Grant execute permission to the Gradle wrapper
-               sh 'chmod +x ./gradlew'
+        stage('Set Permissions') {
+            steps {
+                // Grant execute permission to the Gradle wrapper
+                sh 'chmod +x ./gradlew'
             }
-         }
+        }
+
         stage('Build') {
             steps {
-                // Compile the Kotlin project (assuming it's using Gradle)
-                script {
-                    if (fileExists('gradlew')) {
-                        sh './gradlew clean build'  // Use Gradle wrapper if present
-                    } else if (fileExists('build.gradle')) {
-                        sh 'gradle clean build'  // Use system Gradle
-                    } else if (fileExists('pom.xml')) {
-                        sh 'mvn clean compile'  // Use Maven if it's a Maven project
-                    } else {
-                        error "No recognized build tool found!"
-                    }
-                }
+                // Run Gradle build
+                sh './gradlew clean build'
             }
         }
     }
