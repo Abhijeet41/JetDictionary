@@ -6,7 +6,7 @@ pipeline {
         PATH = "${JAVA_HOME}/bin:${env.PATH}"
     }*/
     tools {
-      git 'Default'
+      git 'Git'
       jdk "OracleJDK11"
     }
     stages {
