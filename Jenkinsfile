@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the project from the main branch
-                git branch: 'main', url: 'https://github.com/Abhijeet41/JetDictionary.git'
+                git branch: 'master', url: 'https://github.com/Abhijeet41/JetDictionary.git'
             }
         }
 
