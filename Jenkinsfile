@@ -18,6 +18,13 @@ pipeline {
             }
         }
 
+        stage('Clean Gradle') {
+             steps {
+                    // Run Gradle build
+                  sh './gradlew --no-daemon'
+             }
+       }
+
         stage('Build') {
             steps {
                 // Run Gradle build
