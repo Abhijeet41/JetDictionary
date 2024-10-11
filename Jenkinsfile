@@ -21,7 +21,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Gradle build
-                sh './gradlew clean build'
+                sh './gradlew assembleRelease'
             }
         }
     }
