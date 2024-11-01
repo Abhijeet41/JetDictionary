@@ -4,13 +4,6 @@ pipeline {
     tools {
         jdk 'OracleJDK11'  // Ensure this JDK is installed on Jenkins
     }
-
-    environment {
-        ANDROID_HOME = "${env.HOME}/android-sdk"
-        PATH = "${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${env.PATH}"
-        GRADLE_OPTS = "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.configureondemand=true"
-    }
-
     stages {
         stage('Set Permissions') {
             steps {
