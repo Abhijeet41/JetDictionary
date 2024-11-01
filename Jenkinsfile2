@@ -2,13 +2,26 @@ pipeline {
     agent any
 
     tools {
-        jdk 'OracleJDK11'  // Ensure this JDK is installed on Jenkins
+        jdk 'OracleJDK11'
     }
 
     stages {
+        stage('Check ANDROID_HOME') {
+            steps {
+                sh 'echo "ANDROID_HOME is set to: $ANDROID_HOME"'
+                sh 'ls $ANDROID_HOME'
+            }
+        }
+
         stage('Set Permissions') {
             steps {
                 sh 'chmod +x ./gradlew'
+            }
+        }
+
+        stage('Set up SDK path') {
+            steps {
+                sh 'echo "sdk.dir=$ANDROID_HOME" > local.properties'
             }
         }
 
