@@ -1,8 +1,10 @@
 pipeline {
     agent any
+
     tools {
         jdk 'OracleJDK11'  // Ensure this JDK is installed on Jenkins
     }
+
     stages {
         stage('Set Permissions') {
             steps {
