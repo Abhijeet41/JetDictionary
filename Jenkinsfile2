@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+
+    tools {
+        jdk 'OracleJDK11'  // Ensure this JDK is installed on Jenkins
+    }
+
+    environment {
+        ANDROID_HOME = "${env.HOME}/android-sdk"
+        PATH = "${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${env.PATH}"
+        GRADLE_OPTS = "-Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.configureondemand=true"
+    }
+
+    stages {
+        stage('Set Permissions') {
+            steps {
+                sh 'chmod +x ./gradlew'
+            }
+        }
+
+        stage('Clean Gradle') {
+            steps {
+                sh './gradlew clean --no-daemon'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh './gradlew assembleRelease'
+            }
+        }
+    }
+
+    post {
+        success {
+            archiveArtifacts artifacts: 'app/build/outputs/apk/release/*.apk', allowEmptyArchive: true
+            echo 'Build completed successfully!'
+        }
+        failure {
+            echo 'Build failed. Please check the logs for errors.'
+        }
+    }
+}
