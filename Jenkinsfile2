@@ -3,7 +3,6 @@ pipeline {
 
     tools {
         jdk 'OracleJDK11'
-        sonarScanner 'sonar6.2'
     }
 
     stages {
@@ -38,15 +37,20 @@ pipeline {
             }
         }
         stage('SonarQube Analysis') {
-            environment {
-                SONAR_TOKEN = credentials('sonartoken')  // Reference the credential ID created in Jenkins
-            }
-            steps {
-                withSonarQubeEnv('sonarserver') {  // Replace 'SonarQube' with your SonarQube server name in Jenkins
-                sh 'sonar-scanner -Dsonar.projectKey=DictionaryApp -Dsonar.login=${SONAR_TOKEN}'
-             }
-           }
-        }
+               environment {
+                  SONAR_TOKEN = credentials('sonartoken')  // Reference the credential ID created in Jenkins
+               }
+                steps {
+                    withSonarQubeEnv('sonarserver') {  // Replace 'sonarserver' with the name of your SonarQube server in Jenkins
+                         sh '''
+                         sonar-scanner \
+                         -Dsonar.projectKey=DictionaryApp \
+                         -Dsonar.sources=. \
+                         -Dsonar.host.url=$SONARQUBE_URL \
+                         -Dsonar.login=$SONAR_TOKEN'''
+                        }
+                    }
+                }
     }
 
     post {
