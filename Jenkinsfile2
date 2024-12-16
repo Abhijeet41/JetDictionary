@@ -36,6 +36,16 @@ pipeline {
                 sh './gradlew assembleRelease'
             }
         }
+        stage('SonarQube Analysis') {
+            environment {
+                SONAR_TOKEN = credentials('sonartoken')  // Reference the credential ID created in Jenkins
+            }
+            steps {
+                withSonarQubeEnv('SonarQube') {  // Replace 'SonarQube' with your SonarQube server name in Jenkins
+                sh 'sonar-scanner -Dsonar.projectKey=DictionaryApp -Dsonar.login=${SONAR_TOKEN}'
+             }
+           }
+        }
     }
 
     post {
