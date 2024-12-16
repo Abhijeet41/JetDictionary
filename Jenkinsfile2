@@ -3,6 +3,7 @@ pipeline {
 
     tools {
         jdk 'OracleJDK11'
+        sonarScanner 'sonar6.2'  // Replace with the name you set in Jenkins
     }
 
     stages {
