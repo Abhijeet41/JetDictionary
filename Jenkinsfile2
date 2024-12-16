@@ -39,6 +39,7 @@ pipeline {
         stage('SonarQube Analysis') {
                environment {
                   SONAR_TOKEN = credentials('sonartoken')  // Reference the credential ID created in Jenkins
+                  SONARQUBE_URL = 'http://192.168.56.82:9000'
                }
                 steps {
                     withSonarQubeEnv('sonarserver') {  // Replace 'sonarserver' with the name of your SonarQube server in Jenkins
